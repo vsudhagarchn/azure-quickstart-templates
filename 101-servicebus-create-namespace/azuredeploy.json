@@ -5,7 +5,7 @@
         "serviceBusNamespaceName": {
             "type": "string",
             "metadata": {
-                "description": "Name of the Service Bus namespace"
+                "description": "RMServiceBusSTD"
             }
         },
         "serviceBusSku": {
@@ -37,11 +37,11 @@
         "apiVersion": "[parameters('serviceBusApiVersion')]",
         "name": "[parameters('serviceBusNamespaceName')]",
         "type": "Microsoft.ServiceBus/Namespaces",
-        "location": "[variables('location')]",
+        "location": "[variables('Southeast Asia')]",
         "kind": "Messaging",
         "sku": {
-            "name": "[parameters('serviceBusSku')]",
-            "tier": "[parameters('serviceBusSku')]"
+            "name": "StandardSku",
+            "tier": "Standard"
         },
         "properties": {}
     }],
